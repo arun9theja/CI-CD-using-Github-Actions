@@ -11,8 +11,6 @@ defaults:
   run:
     shell: bash
 jobs:
-  name: SonarQube Scan
-jobs:
   sonarqube:
     name: SonarQube Trigger
     runs-on: ubuntu-latest

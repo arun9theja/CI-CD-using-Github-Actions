@@ -15,7 +15,7 @@ resource "aws_ecs_service" "service" {
   deployment_maximum_percent         = var.deployment_maximum_percent
   deployment_minimum_healthy_percent = var.deployment_minimum_healthy_percent
   enable_ecs_managed_tags            = "false"
-  health_check_grace_period_seconds  = var.health_check_grace_period_seconds
+ // health_check_grace_period_seconds  = var.health_check_grace_period_seconds
   launch_type                        = "FARGATE"
   platform_version                   = var.platform_version
   scheduling_strategy                = "REPLICA"
@@ -28,11 +28,11 @@ resource "aws_ecs_service" "service" {
 
 
 
-  load_balancer {
+  /*load_balancer {
     container_name   = "${var.project}-${var.environment}"
     container_port   = var.port
     target_group_arn = aws_lb_target_group.app.arn
-  }
+  }*/
 
   network_configuration {
     assign_public_ip = "true"
