@@ -23,8 +23,8 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@v1.2.0
       with:
-        host:  http://100.26.215.243:9000/
-        login: squ_bf4d91f7dc1c1648544dee02d68e0e3f3983c393
+        host:  http://100.26.18.84:9000/
+        login: squ_559e1131b3b6b92dd22a52679bb4c10bb961e5c3
   build:
      name: Maven Build
      runs-on: [ ubuntu-latest ]
