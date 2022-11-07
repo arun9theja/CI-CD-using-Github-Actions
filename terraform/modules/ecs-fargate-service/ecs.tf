@@ -44,7 +44,7 @@ resource "aws_ecs_service" "service" {
 
   depends_on = [
     aws_ecs_task_definition.app,
-    aws_lb.lb
+    //aws_lb.lb
   ]
 }
 
